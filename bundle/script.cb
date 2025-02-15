@@ -1,0 +1,21 @@
+fs::path __BIN__ = __DIR__ / "bin";    
+
+if (!fs::exists(__BIN__)) {
+    fs::create_directories(__BIN__);
+    std::cout << "Created directory: " << __BIN__ << std::endl;
+}
+
+std::string source_file = (__DIST__ / "program.cpp").string();
+std::string output_file = (__BIN__ / "chat").string();
+
+cout << source_file << endl;
+cout << output_file << endl;
+
+std::string cm = "g++ -std=c++20 \"" + source_file + "\" -o \"" + output_file + "\"";
+
+int result = system(cm.c_str());
+
+if (result != 0) {
+    std::cerr << "Compilation failed!" << std::endl;
+    return 1;
+}
