@@ -169,6 +169,7 @@ namespace fs = filesystem;
 
 
 int main(){
+    cout << "Proceed to unpack..." << endl;
     fs::path __DIR__ = fs::current_path();
 )";
 
@@ -176,6 +177,7 @@ int main(){
     content += R"(
     if (!fs::exists(__DIST__)){
         fs::create_directory(__DIST__);
+        std::cout << "Created directory: " << __DIST__ << std::endl;
     }
 
 
