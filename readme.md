@@ -1,8 +1,8 @@
-# **👨‍💻 A Software Designed by NPK31 to Improve My Skills**  
+# **👨‍💻 A Software Designed by Me to Improve My Skills**  
 ### **You Can Try It and Provide Feedback**  
 
 - **Supported OS:** Windows 10  
-- **Requirements:** C++20, Windows Terminal  
+<!-- - **Requirements:** C++20, Windows Terminal   -->
 
 <!-- ### **Usage:**  
 1. **Open the file named "pack.exe" located in the folder named "bundle".**  
