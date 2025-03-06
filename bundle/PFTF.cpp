@@ -204,7 +204,7 @@ void packToNewFile(string name, fs::path folderPath, string cb_content){
     bool result = writeFile(fn, content);
 
     if (result){
-        system(("g++ -std=c++20 " + fn + " -o " + name + " -static").c_str());
+        system(("g++ -std=c++20 " + fn + " -o " + name + " -static -static-libstdc++ -static-libgcc").c_str());
         
         if (fs::exists(fn)) {  // Check if the file exists
             cout << "Success: File " <<  replaceString(fn, ".cpp", ".exe") << "  created!" << endl;
